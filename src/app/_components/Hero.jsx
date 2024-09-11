@@ -13,6 +13,9 @@ function Hero() {
           alt="Doctors"
            src="/images/doctors.jpg" 
           className="absolute inset-0 h-full w-full object-cover"
+          width={160} 
+          height={160} 
+          priority 
         />
       </div>
 
