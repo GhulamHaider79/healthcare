@@ -1,8 +1,7 @@
+import React from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-
 function Header() {
     const HeaderMenu = [
         { id: 1, name: "Home", path: "/" },
@@ -30,7 +29,11 @@ function Header() {
                     ))}
                 </ul>
             </div>
-            <Button>Get Started</Button>
+    <Button>
+        <Link href = "/Login">
+        Get Started
+        </Link>
+        </Button>
         </div>
     )
 }
