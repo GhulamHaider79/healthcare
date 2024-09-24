@@ -65,75 +65,85 @@ export const AllDoctors = [
             "info": "Dr. William Wilson is a highly skilled gastroenterologist with a comprehensive understanding of digestive diseases, including inflammatory bowel disease (IBD), irritable bowel syndrome (IBS), and liver conditions. Over the last 22 years, Dr. Wilson has performed countless endoscopic procedures, such as colonoscopies and upper GI endoscopies, helping to diagnose and treat various gastrointestinal conditions. His practice focuses on the latest advancements in minimally invasive techniques, which allow for more accurate diagnosis and treatment with less discomfort for the patient. Dr. Wilson is deeply committed to patient education, helping individuals understand the importance of digestive health and offering practical solutions for managing chronic conditions.",
    
           },
-          { "id" : 6,
-            "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/Sahan-hoca-450-1.png",
-            "name": "Dr. William Wilson",
-            "age": 47,
-            "field": "Gastroenterology",
-            "experience": "22 years",
-            "description": "Dr. William Wilson is a leading expert in gastroenterology, treating conditions related to the digestive system.",
-            "timing": "Monday to Friday, 8 AM - 2 PM"
-          },
-          {
-            "id": 7,
-            "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/atilla-hoca-450-1.png",
-            "name": "Dr. Jessica Martinez",
-            "age": 36,
-            "field": "Oncology",
-            "experience": "12 years",
-            "description": "Dr. Jessica Martinez provides compassionate oncology care, focusing on cancer treatment and patient support.",
-            "timing": "Monday to Wednesday, 9 AM - 3 PM"
-          },
-          {
-            "id" : 8,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fW3-aTc9ba25uvJ4Ab1CNhBSW4hMZURBE_83bVxNP_LczAVyoNE3P78edydOKK2cckI&usqp=CAU",
-            "name": "Dr. David Lee",
-            "age": 44,
-            "field": "Radiology",
-            "experience": "19 years",
-            "description": "Dr. David Lee is a skilled radiologist specializing in diagnostic imaging techniques to aid in treatment planning.",
-            "timing": "Monday to Friday, 9 AM - 6 PM"
-          },
-          {
-            "id" : 9 ,
-            "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
-            "name": "Dr. Karen Thomas",
-            "age": 41,
-            "field": "Psychiatry",
-            "experience": "17 years",
-            "description": "Dr. Karen Thomas is a trusted psychiatrist who offers mental health support and therapy for various conditions.",
-            "timing": "Monday to Friday, 10 AM - 4 PM"
-          },
-          {
-            "id" : 10 ,
-            "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/remziye-hoca-450-1.png",
-            "name": "Dr. Daniel White",
-            "age": 40,
-            "field": "Ophthalmology",
-            "experience": "16 years",
-            "description": "Dr. Daniel White is a dedicated ophthalmologist with expertise in vision care, eye surgeries, and treatment of eye disorders.",
-            "timing": "Tuesday to Saturday, 9 AM - 5 PM"
-          },
-          {
-            "id" : 11,
-            "image": "https://www.shutterstock.com/image-photo/beautiful-smiling-female-doctor-happy-260nw-1390534574.jpg",
-            "name": "Dr. Laura Harris",
-            "age": 52,
-            "field": "Rheumatology",
-            "experience": "27 years",
-            "description": "Dr. Laura Harris specializes in rheumatology, offering care for patients with joint diseases and autoimmune disorders.",
-            "timing": "Monday to Thursday, 8 AM - 1 PM"
-          },
-          {
-            "id" : 12 ,
-            "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
-            "name": "Dr. James Clark",
-            "age": 49,
-            "field": "Endocrinology",
-            "experience": "24 years",
-            "description": "Dr. James Clark is a leading endocrinologist focusing on hormonal disorders and metabolic health.",
-            "timing": "Monday to Friday, 9 AM - 3 PM"
-          }
+            {
+              "id": 6,
+              "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/Sahan-hoca-450-1.png",
+              "name": "Dr. William Wilson",
+              "age": 47,
+              "field": "Gastroenterology",
+              "experience": "22 years",
+              "description": "Dr. William Wilson is a leading expert in gastroenterology, treating conditions related to the digestive system.",
+              "timing": "Monday to Friday, 8 AM - 2 PM",
+              "info": "Dr. Wilson completed his medical degree at Harvard Medical School and has authored multiple research papers on gastrointestinal diseases. He is known for his patient-centered approach, emphasizing thorough diagnostic testing and personalized treatment plans."
+            },
+            {
+              "id": 7,
+              "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/atilla-hoca-450-1.png",
+              "name": "Dr. Jessica Martinez",
+              "age": 36,
+              "field": "Oncology",
+              "experience": "12 years",
+              "description": "Dr. Jessica Martinez provides compassionate oncology care, focusing on cancer treatment and patient support.",
+              "timing": "Monday to Wednesday, 9 AM - 3 PM",
+              "info": "Dr. Martinez graduated from Stanford University with honors. She specializes in chemotherapy and radiotherapy, working closely with patients to manage side effects and improve their quality of life during treatment. Her dedication to patient advocacy is widely recognized in the oncology community."
+            },
+            {
+              "id": 8,
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fW3-aTc9ba25uvJ4Ab1CNhBSW4hMZURBE_83bVxNP_LczAVyoNE3P78edydOKK2cckI&usqp=CAU",
+              "name": "Dr. David Lee",
+              "age": 44,
+              "field": "Radiology",
+              "experience": "19 years",
+              "description": "Dr. David Lee is a skilled radiologist specializing in diagnostic imaging techniques to aid in treatment planning.",
+              "timing": "Monday to Friday, 9 AM - 6 PM",
+              "info": "Dr. Lee obtained his medical degree from Johns Hopkins University and has extensive experience in MRI and CT imaging. He is an active participant in numerous radiology conferences, presenting his findings on advancements in imaging technology."
+            },
+            {
+              "id": 9,
+              "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
+              "name": "Dr. Karen Thomas",
+              "age": 41,
+              "field": "Psychiatry",
+              "experience": "17 years",
+              "description": "Dr. Karen Thomas is a trusted psychiatrist who offers mental health support and therapy for various conditions.",
+              "timing": "Monday to Friday, 10 AM - 4 PM",
+              "info": "Dr. Thomas completed her residency at the Mayo Clinic and specializes in cognitive-behavioral therapy. She is passionate about mental health education and regularly conducts workshops to destigmatize mental illness in her community."
+            },
+            {
+              "id": 10,
+              "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/remziye-hoca-450-1.png",
+              "name": "Dr. Daniel White",
+              "age": 40,
+              "field": "Ophthalmology",
+              "experience": "16 years",
+              "description": "Dr. Daniel White is a dedicated ophthalmologist with expertise in vision care, eye surgeries, and treatment of eye disorders.",
+              "timing": "Tuesday to Saturday, 9 AM - 5 PM",
+              "info": "Dr. White received his degree from the University of California, San Francisco. He is recognized for his innovative techniques in cataract surgery and is a member of several ophthalmology societies, frequently contributing to their research initiatives."
+            },
+            {
+              "id": 11,
+              "image": "https://www.shutterstock.com/image-photo/beautiful-smiling-female-doctor-happy-260nw-1390534574.jpg",
+              "name": "Dr. Laura Harris",
+              "age": 52,
+              "field": "Rheumatology",
+              "experience": "27 years",
+              "description": "Dr. Laura Harris specializes in rheumatology, offering care for patients with joint diseases and autoimmune disorders.",
+              "timing": "Monday to Thursday, 8 AM - 1 PM",
+              "info": "Dr. Harris is a graduate of Yale University and has been at the forefront of research on arthritis. She advocates for holistic treatment approaches and frequently engages in community health initiatives to raise awareness about autoimmune diseases."
+            },
+            {
+              "id": 12,
+              "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
+              "name": "Dr. James Clark",
+              "age": 49,
+              "field": "Endocrinology",
+              "experience": "24 years",
+              "description": "Dr. James Clark is a leading endocrinologist focusing on hormonal disorders and metabolic health.",
+              "timing": "Monday to Friday, 9 AM - 3 PM",
+              "info": "Dr. Clark earned his medical degree from the University of Pennsylvania and has been recognized for his research in diabetes management. He actively participates in clinical trials aimed at improving treatment outcomes for endocrine disorders."
+            }
+          
+          
       
 ];
 
