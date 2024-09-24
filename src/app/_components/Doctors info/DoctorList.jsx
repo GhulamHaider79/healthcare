@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const DoctorList = () => {
   const [doctors, setDoctors] = useState([]);
@@ -11,6 +12,7 @@ const DoctorList = () => {
     const fetchDoctors = async () => {
       try {
         const response = await fetch('/Doctors.json');
+        
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -25,6 +27,7 @@ const DoctorList = () => {
     fetchDoctors();
   }, []);
 
+
   return (
     <div className="flex flex-col items-center p-5 mt-10">
       <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold tracking-wide text-center mb-8'>
@@ -36,11 +39,15 @@ const DoctorList = () => {
           <p>Loading...</p>
         ) : (
           doctors.map((doctor, index) => (
+            <Link key={doctor.id} href={`/route/details/${doctor.id}`}  // Dynamically linking to /rout/details/[docId]
+            passHref>
             <div
               key={index}
-              className="border border-gray-300 rounded-lg p-5 w-full max-w-xs text-center shadow-md transition-transform transform hover:scale-105 mt-5"
+              className="border border-gray-300 rounded-lg p-5  max-w-xs text-center shadow-md transition-transform transform hover:scale-105 mt-5 w-[280px]"
             >
               <Image
+              width={144}
+              height={144}
                 src={doctor.image || 'placeholder-image-url'} // Use a placeholder if image is missing
                 alt={doctor.name || 'Doctor Image'}
                 className="w-36 h-36 rounded-full mx-auto"
@@ -50,6 +57,7 @@ const DoctorList = () => {
               <p>Field: {doctor.field || 'N/A'}</p>
               <p>Experience: {doctor.experience || 'N/A'}</p>
             </div>
+            </Link>
           ))
         )}
       </div>
