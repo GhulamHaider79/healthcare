@@ -12,7 +12,9 @@ export const AllDoctors = [
             "field": "Cardiology",
             "experience": "20 years",
             "description": "Dr. John Doe is a highly experienced cardiologist who specializes in treating heart diseases and promoting cardiovascular health.",
-            "timing": "Monday to Friday, 9 AM - 5 PM"
+            "timing": "Monday to Friday, 9 AM - 5 PM",
+            "info" : "Dr. John Doe is a highly experienced and respected cardiologist who has dedicated his career to advancing the treatment of cardiovascular diseases. With over two decades of hands-on experience, Dr. Doe specializes in both preventive cardiology and complex procedures such as angioplasty, stenting, and bypass surgery. He is known for his patient-centric approach, ensuring that each patient receives personalized care based on their unique health needs. Dr. Doe is also actively involved in cardiovascular research and has contributed to numerous publications in top medical journals, making him a leader in his field.",
+  
           },
           {
             "id" : 2 ,
@@ -22,7 +24,9 @@ export const AllDoctors = [
             "field": "Neurology",
             "experience": "15 years",
             "description": "Dr. Jane Smith is an expert in neurology, focusing on disorders of the nervous system and providing specialized treatment plans.",
-            "timing": "Monday to Friday, 10 AM - 4 PM"
+            "timing": "Monday to Friday, 10 AM - 4 PM", 
+            "info": "Dr. Jane Smith is a leading neurologist who has been practicing for 15 years, with a focus on treating neurological disorders such as epilepsy, stroke, multiple sclerosis, and Parkinson’s disease. She is renowned for her diagnostic acumen and her ability to develop effective, tailored treatment plans for her patients. Dr. Smith’s work in neuroimaging and brain mapping has greatly enhanced her ability to pinpoint issues in the nervous system. Her contributions to the study of neurodegenerative diseases have earned her accolades in both academic and clinical settings. In addition to her clinical work, she is a strong advocate for patient education and regularly conducts seminars on brain health.",
+    
           },
           {
             "id" : 3,
@@ -32,7 +36,10 @@ export const AllDoctors = [
             "field": "Orthopedics",
             "experience": "25 years",
             "description": "Dr. Emily Johnson is a skilled orthopedic surgeon with a focus on joint replacement and sports-related injuries.",
-            "timing": "Tuesday to Saturday, 11 AM - 6 PM"
+            "timing": "Tuesday to Saturday, 11 AM - 6 PM",
+
+            "info": "Dr. Michael Brown is a dedicated pediatrician with 14 years of experience in treating children, from newborns to adolescents. His expertise spans a wide range of childhood illnesses, including respiratory infections, developmental disorders, and childhood obesity. Dr. Brown is known for his gentle and empathetic approach, which puts both parents and children at ease. He strongly believes in the importance of early diagnosis and preventive care, often working with families to promote healthy lifestyles from a young age. Additionally, Dr. Brown is actively involved in pediatric research, contributing to the development of vaccines and new treatment methods for childhood diseases.",
+ 
           },
           {
             "id" : 4 ,
@@ -42,7 +49,9 @@ export const AllDoctors = [
             "field": "Pediatrics",
             "experience": "14 years",
             "description": "Dr. Michael Brown specializes in children's health, offering top-notch care for infants, children, and adolescents.",
-            "timing": "Monday to Friday, 9 AM - 3 PM"
+            "timing": "Monday to Friday, 9 AM - 3 PM",
+            "info": "Dr. Sarah Davis is a board-certified dermatologist with nearly two decades of experience in the diagnosis and treatment of skin diseases. Her areas of expertise include psoriasis, eczema, acne, and skin cancer. Dr. Davis is also highly regarded for her work in cosmetic dermatology, offering treatments such as laser therapy, chemical peels, and injectables like Botox and fillers. She stays at the forefront of advancements in dermatological treatments and has introduced cutting-edge procedures that yield excellent cosmetic results with minimal downtime. Dr. Davis’s compassionate care and commitment to patient satisfaction have earned her a loyal following of patients.",
+    
           },
           {
             "id":5,
@@ -52,7 +61,9 @@ export const AllDoctors = [
             "field": "Dermatology",
             "experience": "18 years",
             "description": "Dr. Sarah Davis is a renowned dermatologist specializing in skin disorders and cosmetic dermatology treatments.",
-            "timing": "Monday to Thursday, 10 AM - 5 PM"
+            "timing": "Monday to Thursday, 10 AM - 5 PM",
+            "info": "Dr. William Wilson is a highly skilled gastroenterologist with a comprehensive understanding of digestive diseases, including inflammatory bowel disease (IBD), irritable bowel syndrome (IBS), and liver conditions. Over the last 22 years, Dr. Wilson has performed countless endoscopic procedures, such as colonoscopies and upper GI endoscopies, helping to diagnose and treat various gastrointestinal conditions. His practice focuses on the latest advancements in minimally invasive techniques, which allow for more accurate diagnosis and treatment with less discomfort for the patient. Dr. Wilson is deeply committed to patient education, helping individuals understand the importance of digestive health and offering practical solutions for managing chronic conditions.",
+   
           },
           { "id" : 6,
             "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/Sahan-hoca-450-1.png",
