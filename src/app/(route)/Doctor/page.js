@@ -21,6 +21,7 @@ const DoctorDetail = () => {
     });
 
     const id = searchParams.get("id");
+    
 
     if (id) {
       const foundDoctors = AllDoctors.filter((doc) => doc.id === parseInt(id));
@@ -47,7 +48,7 @@ const DoctorDetail = () => {
       alert("Please login to book an appointment."); // Show message
     }
   };
-
+  const additionalInfo = doctors.length > 0 ? doctors[0].info : null;
   return (
     <div className="flex flex-col items-center p-6 mt-10 bg-gray-50 min-h-screen">
       <motion.h2
@@ -56,7 +57,7 @@ const DoctorDetail = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        Doctor(s) Detail
+        Doctor`s Detail
       </motion.h2>
 
       {error ? (
@@ -106,6 +107,18 @@ const DoctorDetail = () => {
               </motion.div>
             ))}
           </div>
+          {additionalInfo && (
+            <motion.div
+              className=" ml-4 md:ml-8 lg:ml-12  mt-8 lg:mt-0 p-10 bg-white border border-gray-200 rounded-xl    shadow-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
+              <h3 className="text-xl font-bold text-gray-700">Additional Info:</h3>
+              <p className="text-lg text-gray-600">{additionalInfo}</p>
+            </motion.div>
+          )}
+          
         </div>
       )}
     </div>
