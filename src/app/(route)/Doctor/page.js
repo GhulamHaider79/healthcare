@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -112,4 +112,11 @@ const DoctorDetail = () => {
   );
 };
 
-export default DoctorDetail;
+// Wrap the DoctorDetail component in a Suspense boundary
+const SuspenseDoctorDetail = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <DoctorDetail />
+  </Suspense>
+);
+
+export default SuspenseDoctorDetail;
