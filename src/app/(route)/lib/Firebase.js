@@ -1,18 +1,21 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore'; // Add this line
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBDw5y5iXQvEY2KMql78CoEHizslbwQ9h8",
-    authDomain: "doctor-app-12a47.firebaseapp.com",
-    projectId: "doctor-app-12a47",
-    storageBucket: "doctor-app-12a47.appspot.com",
-    messagingSenderId: "322452332166",
-    appId: "1:322452332166:web:4d3455507bf7b54deffb07",
-    measurementId: "G-QP9S9GSSRG"
-    
+    apiKey:String(process.env.NEXT_PUBLIC_FIREBASE_API_KEY) ,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: String(process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID),
 };
+
+
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
-export { auth };
+const db = getFirestore(app); // Ensure this line is present
+console.log('API Key:', process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
+export { auth, db }; // Export db as well

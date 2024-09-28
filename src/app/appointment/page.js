@@ -3,20 +3,9 @@ import React, { useState } from 'react';
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import DoctorList, { AllDoctors } from '../_components/Doctorlist';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBDw5y5iXQvEY2KMql78CoEHizslbwQ9h8",
-  authDomain: "doctor-app-12a47.firebaseapp.com",
-  projectId: "doctor-app-12a47",
-  storageBucket: "doctor-app-12a47.appspot.com",
-  messagingSenderId: "322452332166",
-  appId: "1:322452332166:web:4d3455507bf7b54deffb07",
-  measurementId: "G-QP9S9GSSRG"
-};
+import { db } from '../(route)/lib/Firebase';
 
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 
 const DoctorAppointment = () => {
   const [formData, setFormData] = useState({

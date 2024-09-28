@@ -188,7 +188,7 @@ const DoctorList = () => {
               <p>Experience: {doctor.experience}</p>
 <Link href={`/Doctor?id=${doctor.id}`}>
   <button className="mt-4 bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-md">
-    Book Now
+    Detail
   </button>
 </Link>
             </div>

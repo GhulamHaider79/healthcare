@@ -18,7 +18,7 @@ const Login = () => {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       console.log('User logged in:', user);
-      router.push('/appointment'); // or whichever route you'd like to redirect to
+      router.push('/'); 
     } catch (error) {
       console.error('Error logging in:', error);
       alert('Incorrect email or password');
